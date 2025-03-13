@@ -156,6 +156,24 @@ ul.last-navbar {
     visibility: visible;
 }
 
+ul.end-navbar {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: #fff;
+    width: 150px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.last-navbar li:hover>.end-navbar {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* video start */
 
 /* .video-area {
