@@ -348,7 +348,50 @@
         </div>
     </section>
     <!-- service end -->
-     lorem500
+
+    <!-- client start -->
+    <section>
+        <div class="client-area py-5">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h2>Our Clients</h2>
+                </div>
+
+                <div class="swiper client-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/service.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/service.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/service.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/service.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/service.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/service.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/service.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/service.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/service.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- client end -->
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
@@ -361,6 +404,24 @@
             let scrollPosition = window.scrollY;
             document.querySelector(".service-area").style.backgroundPosition = "center " + (scrollPosition * 0.5) + "px";
         });
+    </script>
+    <script>
+        var swiper = new Swiper(".client-slider", {
+            slidesPerView: 6,
+            spaceBetween: 30,
+            loop: true,
+            loopedSlides: 10,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                1024: { slidesPerView: 6 },
+                768: { slidesPerView: 3 },
+                480: { slidesPerView: 2 },
+            },
+        });
+
     </script>
 </body>
 
