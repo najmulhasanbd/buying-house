@@ -15,9 +15,11 @@
     .logo img {
         padding-top: 20px;
     }
+
     .header-slogan {
         display: block !important;
     }
+
     .video-area img {
         height: 50vh !important;
     }
@@ -55,9 +57,17 @@
     .header-slogan h1 {
         font-size: 30px !important;
     }
+
     .video-area img {
         height: 60vh !important;
     }
+
+    .header-top .container {
+        gap: 10px;
+    }
+
+
+
 }
 
 /* Large Mobile :480px. */

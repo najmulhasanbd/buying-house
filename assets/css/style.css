@@ -563,3 +563,9 @@ header.others_page i {
 .header-top ul li a {
     color: #a0a0a0;
 }
+
+.header-top ul li,
+.header-top ul li a {
+    color: #a0a0a0;
+}
+
