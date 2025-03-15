@@ -175,23 +175,25 @@ ul.end-navbar {
 }
 
 /* video start */
-
-/* .video-area {
-    position: absolute;
+.video-area {
+    position: relative;
     z-index: 2;
-    top: 0;
-    width: 100%;
-} */
+}
+
+.header-slogan {
+    display: flex;
+    align-items: end;
+}
 
 .video-area::after {
     position: absolute;
     content: '';
-    background: #0000008c;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
+    background-color: #00000085;
 }
 
 section.video-area h6 {
@@ -483,7 +485,9 @@ section.video-area small {
 
 .mobile_menu ul li a {
     text-transform: capitalize;
-}.mobile_menu ul li a.open {
-    background: black; 
-    color: white; 
+}
+
+.mobile_menu ul li a.open {
+    background: black;
+    color: white;
 }
