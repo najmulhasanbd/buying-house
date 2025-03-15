@@ -1,5 +1,14 @@
+window.onload = function () {
+    setTimeout(function () {
+        document.getElementById('serviceImage').style.display = 'none';
+        document.getElementById('backgroundVideo').style.display = 'block';
+    }, 1000);
+};
+
+
+//video slide
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3, // Default for larger screens
+    slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
         clickable: true,
@@ -10,11 +19,11 @@ var swiper = new Swiper(".mySwiper", {
     },
     loop: true,
     breakpoints: {
-        1200: { slidesPerView: 3 }, // Large screens (desktops)
-        992: { slidesPerView: 2 },  // Medium screens (tablets)
-        768: { slidesPerView: 2 },  // Small tablets
-        576: { slidesPerView: 1 },  // Mobile landscape
-        0: { slidesPerView: 1 }     // Small mobile screens
+        1200: { slidesPerView: 3 },
+        992: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        576: { slidesPerView: 1 },
+        0: { slidesPerView: 1 }
     },
     on: {
         slideChange: function () {
@@ -38,9 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
             menuItem.parentElement.classList.add("has-submenu");
 
             menuItem.addEventListener("click", function (e) {
-                e.preventDefault(); // লিংকের ডিফল্ট অ্যাকশন বন্ধ
+                e.preventDefault();
 
-                // একই লেভেলের অন্য সাবমেনু বন্ধ করা
                 let parentUl = menuItem.closest("ul");
                 parentUl.querySelectorAll(":scope > li > a.open").forEach((openLink) => {
                     if (openLink !== menuItem) {
@@ -49,9 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 });
 
-                // ক্লিক করা সাবমেনু টগল করা
                 submenu.classList.toggle("open");
-                menuItem.classList.toggle("open"); // ব্যাকগ্রাউন্ড লাল করার জন্য `open` ক্লাস টগল
+                menuItem.classList.toggle("open");
             });
         }
     });

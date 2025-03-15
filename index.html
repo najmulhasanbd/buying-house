@@ -37,7 +37,7 @@
     </div>
     <!-- Header Start -->
     <header class="bg-black">
-        <div class="header-area position-relative">
+        <div class="header-area position-relative d-flex align-items-center">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-6 mx-auto col-9">
@@ -45,8 +45,8 @@
                                     src="https://esquireknit.com/wp-content/uploads/2017/09/esquire-knit-composite-ltd-1.png"
                                     alt="logo"></a></div>
                     </div>
-                    <div class="col-lg-7 col-md-10 d-none d-md-block d-flex justify-content-end">
-                        <div class="navbar">
+                    <div class="col-lg-7 col-md-10 d-none d-md-block d-flex ">
+                        <div class="navbar d-flex justify-content-end">
                             <ul class="d-flex gap-4">
                                 <li><a href="index.html">home</a></li>
                                 <li><a href="index.html">about us</a>
@@ -155,14 +155,28 @@
                     </div>
                 </div>
             </div>
+            <img style="margin-right: 6px;" src="assets/images/flag.gif"  alt="">
         </div>
     </header>
     <!-- Header End -->
 
     <!-- Video Area Start -->
-    <section class="video-area"
-        style="background-image: url(https://esquireknit.com/wp-content/uploads/2016/02/aDSC_5261.jpg);height: 100vh;">
-        <div class="container d-flex  justify-content-center  h-100 text-white" style="flex-direction: column;">
+    <section class="video-area" style="position: relative;">
+        <img src="assets/images/service.jpg" alt="Service Image" id="serviceImage"
+            style="width: 100%; height: 100vh; object-fit: cover;">
+
+        <div style="position: relative;">
+            <div id="video_shadow"></div>
+            <video id="backgroundVideo" width="100%" height="100%" autoplay muted loop
+                style="display: none; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);">
+                <source src="assets/images/video.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="container d-flex justify-content-center h-100 text-white" id="video_content"
+            style="flex-direction: column; position: absolute; left: 0; top: 0; right: 0;z-index: 999;">
             <div>
                 <h6>Welcome To</h6>
                 <div class="header-slogan">
@@ -177,44 +191,35 @@
                         <div class="swiper-slide">
                             <a href="">
                                 <h2>who we are?</h2>
-                                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti voluptates
-                                    minus ex eos adipisci iure, officia porro nobis aperiam necessitatibus maxime, eaque
-                                    consequatur error sed sunt tenetur a ipsa eius!</small>
+                                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</small>
                             </a>
                         </div>
 
                         <div class="swiper-slide">
                             <a href="">
                                 <h2>who we are?</h2>
-                                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti voluptates
-                                    minus ex eos adipisci iure, officia porro nobis aperiam necessitatibus maxime, eaque
-                                    consequatur error sed sunt tenetur a ipsa eius!</small>
+                                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</small>
                             </a>
                         </div>
 
                         <div class="swiper-slide">
                             <a href="">
                                 <h2>who we are?</h2>
-                                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti voluptates
-                                    minus ex eos adipisci iure, officia porro nobis aperiam necessitatibus maxime, eaque
-                                    consequatur error sed sunt tenetur a ipsa eius!</small>
+                                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</small>
                             </a>
                         </div>
 
                         <div class="swiper-slide">
                             <a href="">
                                 <h2>who we are?</h2>
-                                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti voluptates
-                                    minus ex eos adipisci iure, officia porro nobis aperiam necessitatibus maxime, eaque
-                                    consequatur error sed sunt tenetur a ipsa eius!</small>
+                                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</small>
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
     <!-- Video Area End -->
 
     <!-- about start -->

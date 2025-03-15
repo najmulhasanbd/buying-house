@@ -104,6 +104,7 @@ img {
     width: 150px;
     position: absolute;
     transition: var(--transition);
+    border: 1px solid #ddd;
     opacity: 0;
     visibility: hidden;
 }
@@ -129,6 +130,7 @@ ul.sub-navbar li {
     background: #fff;
     left: 100%;
     transition: var(--transition);
+    border: 1px solid #ddd;
     opacity: 0;
     visibility: hidden;
     width: 150px;
@@ -146,6 +148,7 @@ ul.last-navbar {
     background: #fff;
     transition: var(--transition);
     opacity: 0;
+    border: 1px solid #ddd;
     visibility: hidden;
     width: 150px;
     top: 0;
@@ -175,7 +178,17 @@ ul.end-navbar {
 }
 
 /* video start */
+.video-area img {
+    position: relative;
+    z-index: -1;
+}
+
 .video-area {
+    position: relative;
+    z-index: 2;
+}
+
+#backgroundVideo {
     position: relative;
     z-index: 2;
 }
@@ -193,13 +206,24 @@ ul.end-navbar {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: #00000085;
+    background-color: #000000c7;
 }
 
 section.video-area h6 {
     font-size: 30px;
     padding: 0 0 0 5px;
     color: #fff;
+}
+
+div#video_shadow {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.75);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
 }
 
 section.video-area h1 {
@@ -490,4 +514,52 @@ section.video-area small {
 .mobile_menu ul li a.open {
     background: black;
     color: white;
+}
+
+/* other page */
+header.others_page ul li a {
+    color: #000;
+}
+
+.others_page .header-area {
+    background: #FCFCFC;
+    border: 1px solid #ddd;
+}
+
+header.others_page i {
+    color: #000 !important;
+}
+
+.header-social li a i {
+    border: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #a0a0a0;
+}
+
+.header-social li:hover a i {
+    color: #fff;
+}
+
+.header-social li {
+    transition: var(--transition);
+}
+
+.header-social li.facebook:hover {
+    background: #0866FF;
+}
+
+.header-social li.youtube:hover {
+    background: #FF0133;
+}
+
+.header-social li.linkedin:hover {
+    background: #006FAC;
+}
+
+.header-top ul li,
+.header-top ul li a {
+    color: #a0a0a0;
 }
