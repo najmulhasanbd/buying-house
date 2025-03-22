@@ -615,3 +615,7 @@ header.others_page i {
     background: #DA1818;
     color: #fff;
 }
+.logo a img {
+    width: 80px !important;
+    padding: 20px;
+}
