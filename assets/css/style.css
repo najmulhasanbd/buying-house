@@ -569,3 +569,49 @@ header.others_page i {
     color: #a0a0a0;
 }
 
+/* contact page */
+.contact-form input {
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    color: #fff;
+}
+
+.contact-list i {
+    color: #E54343;
+    font-size: 25px;
+}
+
+.contact-list h2 {
+    font-size: 25px;
+}
+
+.contact-list a {
+    color: #6e6b6b;
+    font-size: 15px;
+}
+
+.contact-social a i {
+    background: #d4d4d4;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 20px;
+    transition: all .5s ease-in-out;
+}
+.contact-social a.facebook:hover i {
+    background: #4B6EA8;
+    color: #fff;
+}
+.contact-social a.linkedin:hover i {
+    background: #0189C3;
+    color: #fff;
+}
+.contact-social a.youtube:hover i {
+    background: #DA1818;
+    color: #fff;
+}

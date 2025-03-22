@@ -12,7 +12,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .contact-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
+        .form-control {
+            border-radius: 8px;
+        }
+
+        .btn-custom {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-custom:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
@@ -177,14 +200,12 @@
 
     <!-- breadcrumb start -->
     <div class="breadcrumb-area container d-flex align-items-center justify-content-between py-5">
-        <h2 class="fs-1 text-black fw-bold">About Company
-        </h2>
+        <h2 class="fs-1 text-black fw-bold">Contact</h2>
 
         <ul class="d-flex align-items-center">
             <li><a href="">Home</a></li>
             <li class="px-1">/</li>
-            <li>About Company
-            </li>
+            <li>Contact</li>
         </ul>
     </div>
     <hr>
@@ -192,108 +213,94 @@
 
     <!-- main content -->
     <main>
+        <div class="container py-5">
+            <div class="section-heading text-center">
+                <h2>Get In Touch <span style="color: #E54343;font-size: 2rem;">With Us</span></h2>
+                <p>Drop us a Message! </p>
+            </div>
 
-        <div class="container">
-            <iframe width="100%" height="500" src="https://www.youtube.com/embed/HqBSXnMhBnc?si=77WMowve6DkbY8MU"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="row">
+                <div class="col-lg-5 col-md-6"></div>
+                <div class="col-lg-7 col-md-6"></div>
+            </div>
 
-            <div class="py-4">
-                <p class="py-3"> Esquire Group is one of the esteemed business conglomerates of the country. It has been
-                    proudly and
-                    significantly contributing to the society and national economy through creating remarkable
-                    employment
-                    opportunities and exporting globally.
-                </p>
-                <h2 class="mb-2"> THE JOURNEY</h2>
-
-                <div class="d-flex gap-2"><b>1989</b>
-                    <p>Establishment of Esquire Electronics Ltd.- A trading co. in electronic goods</p>
+            <div class="row py-5 g-3">
+                <div class="col-lg-5">
+                    <div class="contact-list d-flex flex-column gap-4">
+                        <div class="d-flex align-items-center gap-3">
+                            <div>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                            <div>
+                                <h2>Phone</h2>
+                                <a href="tel:+8801937563157">01937563157</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                            <div>
+                                <h2>E-Mail</h2>
+                                <a href="mailto:najmulcse247@gmail.com">najmulcse247@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                            <div>
+                                <h2>Address</h2>
+                                <a href="https://maps.app.goo.gl/gd1jv5kC86N8i7gm6" target="_blank">
+                                    Ideal Trade Centre, 9th Floor, 102 Shaheed Tajuddin Ahmed Sharani, Tejgaon I/A.
+                                    Dhaka-1208, Bangladesh.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social mt-5">
+                        <h2>Our Social Networks</h2>
+                        <p>Find us in the most popular social websites. </p>
+                        <div class="mt-3">
+                            <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="d-flex gap-2 py-2">
-                    <b>1993</b>
-                    <p> Establishment of 1st automated Yarn dyeing project in Bangladesh
-                    </p>
+                <div class="col-lg-7">
+                    <div class="contact-form">
+                        <h3 class="text-center mb-4">Contact Us</h3>
+                        <form action="" method="post">
+                            <div class="mb-3">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="message" class="form-control" placeholder="Your Message" rows="5"
+                                    required></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-custom">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
+            </div>
 
-                <div class="d-flex gap-2 py-2">
-                    <b>1994</b>
-                    <p>Diversification of Yarn Dyeing</p>
-                </div>
-
-                <div class="d-flex gap-2 py-2">
-                    <b>1994</b>
-                    <p>Beginning of Garment manufacturing</p>
-                </div>
-
-                <div class="d-flex gap-2 py-2">
-                    <b>1995</b>
-                    <p>Beginning of Circular knitting, Fabric Dyeing & Finishing</p>
-                </div>
-
-                <div class="d-flex gap-2 py-2">
-                    <b>2000</b>
-                    <p>Further expansion of the Garment Unit</p>
-                </div>
-
-                <div class="d-flex gap-2 py-2">
-                    <b>2003</b>
-                    <p>Declared/Awarded ‘Supplier Of The Year’ for C&A for the first time</p>
-                </div>
-
-                <div class="d-flex gap-2 py-2">
-                    <b>2005</b>
-                    <p>Venture into US market due to abolition of Quota</p>
-                </div>
-
-                <div class="d-flex gap-2 py-2">
-                    <b>2006</b>
-                    <p>Expansion project undertaken to double the total capacity</p>
-                </div>
-
-                <div class="d-flex gap-2 py-2">
-                    <b>2014</b>
-                    <p>Established of Esquire Testing Services Limited (ETSL)</p>
-                </div>
-
-                <p class="mb-2">Esquire Knit Composite Limited (EKCL) is a strategic business unit of Esquire Group was
-                    incorporated
-                    as
-                    a private limited Company on 16 February 2000 under the Companies Act 1994 and converted to public
-                    limited company on 22 January 2015.</p>
-
-                <p class="mb-2">EKCL is exporting RMG to the EUROPE & AMERICAN chain store, fashion brands and super
-                    markets. the
-                    major
-                    international buyers of the Company such as C&A, Best Seller, Ostin, Espirit, Mascot, Celio, Next,
-                    Tee
-                    Jays, Tchibo, Pull & Bear etc. EKCL is proud member of The Bangladesh Garment Manufacturers and
-                    Exporters Association (BGMEA), Bangladesh Knitwear Manufacturers & Exporters Association (BKMEA),
-                    Bangladesh -German Chamber of Commerce, Bangladesh -Spain Chamber of Commerce, Bangladesh- France
-                    Chamber of Commerce</p>
-
-                <p class="mb-2"> Esquire Knit Composite Limited has successfully certified to ISO 9001 (quality
-                    management system),
-                    ISO
-                    14001 (environmental management system), ISO 18001 (occupational health & safety management system)
-                    under the scope of UKAS (United Kingdom Accreditation Service), system certification scheme. EKCL is
-                    also oeko-tex standard 100 certified Company for usage of environmental friendly dyes stuffs and
-                    chemical approved by Hohenstein Textile Testing Institutes, Germany as well as Global Organic
-                    Textile
-                    Standard (GOTS), Organic Content Standard (OCS-IN) certification.</p>
-
-                <p class="mb-2"> Esquire has a very sophisticated and most modern testing lab – accredited by National
-                    Accreditation
-                    Board For Testing And Calibration Laboratories- Nabl, Esprit, C&A & Next. EKCL is fully compliant
-                    with
-                    frequent random evaluation by world renowned institutes like: Business Social Compliance Initiative
-                    (BSCI) , ITS, SGS, BV, UL etc.
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116833.97303520625!2d90.33728825497036!3d23.780818635553448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1742287707141!5m2!1sen!2sbd"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div>
-
     </main>
     <!-- main content -->
 
